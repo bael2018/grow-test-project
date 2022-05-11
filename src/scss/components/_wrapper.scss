@@ -1,0 +1,15 @@
+%wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper{
+    @extend %wrapper;
+    margin: 30px 0;
+}
+
+.list_wrapper{
+    width: 800px;
+    @extend %wrapper;
+    flex-wrap: wrap;
+}

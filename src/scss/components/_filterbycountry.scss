@@ -1,0 +1,67 @@
+.filter{
+    height: 61px;
+    width: 360px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    cursor: pointer;
+    position: relative;
+
+    &__country{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        height: 100%;
+        font-size: 22px;
+        color: #242632;
+        font-weight: 500;
+        line-height: 26px;
+
+        svg{
+            font-weight: 500;
+            color: #242632;
+        }
+    }
+
+    &:hover &__countrylist{
+        display: block !important;
+    }
+
+    &__countrylist{
+        position: absolute;
+        width: 100%;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 0px 24px 24px #0000000a;
+        border-radius: 4px;
+        left: 0;
+        top: 61px;
+        z-index: 3;
+        max-height: 200px;
+        overflow-y: scroll;
+        display: none;
+
+        p{
+            height: 50px;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid rgb(212, 212, 212);
+
+            &:hover{
+                background: #EDF7FF;
+            }
+        }
+
+        &::-webkit-scrollbar{
+            width: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            background: grey;
+            border-radius: 10px;
+        }
+    }
+}
