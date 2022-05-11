@@ -1,4 +1,4 @@
-import '../../scss/components/_empty.scss'
+import '../../scss/components/_handler.scss'
 
 const Empty = () => {
     return (

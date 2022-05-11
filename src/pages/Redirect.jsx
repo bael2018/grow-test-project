@@ -1,8 +1,20 @@
+import { useNavigate } from "react-router-dom";
+import { appPaths } from "../constants/appPaths";
+import "../scss/components/_handler.scss";
 
 const Redirect = () => {
-    return (
-        <div>Redirect</div>
-    )
-}
+    const navigate = useNavigate();
 
-export default Redirect
+    const redirectHandler = () => {
+        navigate(appPaths.MAIN);
+    };
+
+    return (
+        <div className="empty">
+            <h3>Такой страницы нет</h3>
+            <span onClick={redirectHandler}>главную страницу</span>{" "}
+        </div>
+    );
+};
+
+export default Redirect;

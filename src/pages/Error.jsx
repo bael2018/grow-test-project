@@ -1,7 +1,8 @@
+import '../scss/components/_handler.scss'
 
-const Error = () => {
+const Error = ({ status }) => {
     return (
-        <div>Error</div>
+        <div className="empty"><h4>Произошла ошибка | cтатус ошибки {status}</h4></div>
     )
 }
 
