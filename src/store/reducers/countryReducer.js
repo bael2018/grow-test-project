@@ -4,7 +4,7 @@ const initialState = {
     data: [],
     status: false,
     error: null,
-    country: "Kyrgyzstan",
+    country: localStorage.getItem("country") || 'Kyrgyzstan',
 };
 
 export const countryReducer = createSlice({
